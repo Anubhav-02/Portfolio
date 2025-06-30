@@ -112,21 +112,25 @@ section {
     align-items: center;
 }
 .about-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #b0b0b0;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
+
 .profile-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10%;
+    width: 500px; /* fixed width for consistency */
+    height: 500px; /* fixed height for square image */
+    border-radius: 10%; /* circle profile picture */
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin: 0 auto; /* center in container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .profile-img img {
     width: 100%;
-    height: auto;
-    border-radius: 10%;
+    height: 100%;
+    object-fit: cover; /* maintain aspect ratio and fill container */
     transition: transform 0.3s ease;
 }
 
@@ -274,6 +278,29 @@ border-bottom: 1px solid rgba(100, 255, 218, 0.2);
 .card:last-child {
 border-bottom: none;
 }
+/* Add separator line after each education entry except the last */
+.education-list .card p.education-description {
+    border-bottom: 1px solid rgba(100, 255, 218, 0.2);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.education-list .card p.education-description:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+/* Add separator line after each experience entry except the last */
+.experience-list .card ul.experience-responsibilities {
+    border-bottom: 1px solid rgba(100, 255, 218, 0.2);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.experience-list .card ul.experience-responsibilities:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
 
 /* Certifications Section */
 .certifications-list {
@@ -408,4 +435,21 @@ footer {
     .container {
         padding: 0 15px;
     }
+}
+
+/* Tap Animation */
+.tap-effect {
+    transition: transform 0.1s ease-out;
+}
+
+.tap-effect:active {
+    transform: scale(0.97);
+}
+
+/* Logo of edu and ex */
+h3 .icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
 }
