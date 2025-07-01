@@ -44,11 +44,12 @@ document.querySelectorAll('section > .container').forEach(section => {
     observer.observe(section);
 });
 
-// Mobile menu toggle (basic implementation)
+// Mobile menu toggle (updated for show class)
 const mobileMenu = document.querySelector('.mobile-menu');
 const navLinks = document.querySelector('.nav-links');
+
 mobileMenu.addEventListener('click', () => {
-    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    navLinks.classList.toggle('show');
 });
 
 // Parallax effect for floating elements
