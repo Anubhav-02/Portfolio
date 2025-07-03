@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    background: linear-gradient(135deg, #424242 0%, #1a1a2e 50%, #16213e 100%);
     color: #ffffff;
     line-height: 1.6;
     overflow-x: hidden;
@@ -324,6 +324,17 @@ border-bottom: none;
 }
 
 .experience-list .card ul.experience-responsibilities:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+/* Add separator line after each Extra Caricular entry except the last */
+.Extracurricular-Activities-list .card ul.Extracurricular-Activities-responsibilities {
+    border-bottom: 1px solid rgba(100, 255, 218, 0.2);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.Extracurricular-Activities-list .card ul.ExtracurricularActivities-responsibilities:last-of-type {
     border-bottom: none;
     margin-bottom: 0;
 }
