@@ -302,7 +302,7 @@ section {
     color: #b0b0b0;
 }
 .card ul li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
 }
 .card {
 border-bottom: 1px solid rgba(100, 255, 218, 0.2);
@@ -310,6 +310,7 @@ border-bottom: 1px solid rgba(100, 255, 218, 0.2);
 .card:last-child {
 border-bottom: none;
 }
+
 /* Add separator line after each education entry except the last */
 .education-list .card p.education-description {
     border-bottom: 1px solid rgba(100, 255, 218, 0.2);
@@ -431,6 +432,8 @@ border-bottom: none;
     color: #0f0f23;
     transform: translateY(-3px);
 }
+
+
 
 /* Footer */
 footer {
