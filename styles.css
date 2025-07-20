@@ -508,3 +508,20 @@ h3 .icon {
     vertical-align: middle;
     margin-right: 0.5rem;
 }
+
+.contact-items {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+    .contact-items {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+    .contact-item {
+        width: 100%;
+    }
+}
